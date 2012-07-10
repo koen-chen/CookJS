@@ -145,8 +145,10 @@
 				return result;
 			},
 
-			create : function(){
-
+			create : function(obj){
+				function F() {};
+				F.prototype = obj;
+				return new F();
 			},
 
 			defineProperty : function(){
