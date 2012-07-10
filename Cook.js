@@ -106,7 +106,7 @@
 		},
 		Date : {
 			now : function(){
-				return (new Date()).getTime();
+				return +(new Date());
 			},
 
 			toISOString : function(date){
