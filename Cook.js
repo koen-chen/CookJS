@@ -101,7 +101,7 @@
 		},
 		String : {
 			trim : function(str){
-				return str.replace(/^\s*|\s*$/ig,'');
+				return str.replace(/^\s+|\s+$/g,'');
 			}
 		},
 		Date : {
