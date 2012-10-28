@@ -126,7 +126,7 @@
 			bind : function(fn, context){
 				var args = _slice.call(arguments,2);
 				return (function(){
-					return fn.apply(context,args.contact(_slice.call(arguments)));
+					return fn.apply(context,args.concat(_slice.call(arguments)));
 				})
 			}
 		},
